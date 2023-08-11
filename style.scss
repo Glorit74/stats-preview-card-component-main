@@ -123,7 +123,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "card img";
     gap: 2em;
-	max-width: 1440px;
+    max-width: 1440px;
   }
 }
 
@@ -189,7 +189,7 @@ picture {
   }
 
   @include desktop {
-    padding: 5em ;
+    padding: 5em 6em 3em;
 
     .title,
     p,
@@ -198,13 +198,13 @@ picture {
     }
 
     .title {
-      font-size: 3rem;
+      font-size: 3.1rem;
     }
 
     p {
       font-size: 1.4rem;
       line-height: 2;
-	  margin-bottom: 5em;
+      margin-bottom: 5em;
     }
 
     .data {
@@ -212,13 +212,13 @@ picture {
       flex-direction: row;
       justify-content: space-between;
 
-	  .number {
-		font-size: 2.5rem;
-	  }
+      .number {
+        font-size: 2.5rem;
+      }
 
-	  .category {
-		font-size: 1.3rem;
-	  }
+      .category {
+        font-size: 1.3rem;
+      }
     }
   }
 }

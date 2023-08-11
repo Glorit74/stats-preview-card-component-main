@@ -166,7 +166,7 @@ picture img {
 }
 @media (min-width: 640px) {
   .card {
-    padding: 5em;
+    padding: 5em 6em 3em;
   }
   .card .title,
   .card p,
@@ -174,7 +174,7 @@ picture img {
     text-align: left;
   }
   .card .title {
-    font-size: 3rem;
+    font-size: 3.1rem;
   }
   .card p {
     font-size: 1.4rem;
