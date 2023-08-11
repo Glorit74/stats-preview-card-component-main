@@ -74,14 +74,7 @@ select {
   border-radius: 0;
 }
 
-$tablet: 640px;
-$desktop: 960px;
-
-@mixin tablet {
-  @media (min-width: #{$tablet}) {
-    @content;
-  }
-}
+$desktop: 640px;
 
 @mixin desktop {
   @media (min-width: #{$desktop}) {
@@ -113,14 +106,6 @@ body {
   color: var(--clr-main-paragraph);
 }
 
-picture {
-  background-color: var(--clr-accent);
-  img {
-    opacity: 0.4;
-    filter: contrast(1.5);
-  }
-}
-
 .container {
   position: relative;
   display: grid;
@@ -133,10 +118,23 @@ picture {
 
   background-color: var(--clr-card-bg);
   border-radius: 1rem;
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "card img";
+    gap: 2em;
+	max-width: 1440px;
+  }
 }
 
 picture {
   grid-area: img;
+  background-color: var(--clr-accent);
+  img {
+    opacity: 0.4;
+    filter: contrast(1.5);
+    min-height: 100%;
+  }
 }
 
 .card {
@@ -187,6 +185,40 @@ picture {
       color: var(--clr-stat-headings);
 
       margin-bottom: 2em;
+    }
+  }
+
+  @include desktop {
+    padding: 5em ;
+
+    .title,
+    p,
+    .number {
+      text-align: left;
+    }
+
+    .title {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 2;
+	  margin-bottom: 5em;
+    }
+
+    .data {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+	  .number {
+		font-size: 2.5rem;
+	  }
+
+	  .category {
+		font-size: 1.3rem;
+	  }
     }
   }
 }
