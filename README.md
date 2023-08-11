@@ -1,6 +1,6 @@
 # Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62).
 
 ## Table of contents
 
@@ -22,8 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/myDesktop.JPG)
-
+![](/images/myDesktop.JPG)
 
 ## My process
 
@@ -40,7 +39,6 @@ Users should be able to:
 to create an image with a color overlay
 
 I get my solution from here [Two ways to create an image with a color overlay in CSS](https://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-eio)
-
 
 ## Acknowledgments
 
